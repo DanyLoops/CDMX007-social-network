@@ -7,9 +7,7 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     background-position: center;
     background-repeat:no-repeat;
   
-
 } 
-
 #logo {
     
     width:45%;
@@ -20,8 +18,6 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     margin-bottom:60px;
     
 }
-
-
 .line {
     margin:0px 25px;
     width:95px;    
@@ -30,18 +26,13 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     top:10px;
     float:left;
     }
-
-
    .leyend {
     font-family: 'Open Sans', sans-serif;
     float:left;
     color: white;
    }
-
-
-
 .btn {
-	
+    
     font-family: 'Roboto Condensed', sans-serif;
     color: #085793;
     background: white;
@@ -49,15 +40,12 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     border-radius: 20px;
     padding: 2px 28px;
   
-
 }
-
 #main-nav{
     background-color: #085793;
     }
-
 .btn2 {
-	
+    
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     background: #085793;
@@ -67,11 +55,9 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     margin-bottom:5px;
     margin-top: 10px;
     text-align: center;
-
 }
-
 .btnG{
-	
+    
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     background: #bb0000;
@@ -80,11 +66,9 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     padding: 10px 50px;
     margin-bottom:5px;
     margin-top: 10px;
-
 }
-
 .btnF{
-	
+    
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     background: #3b5998;
@@ -93,11 +77,9 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     padding: 10px 50px;
     margin-bottom:5px;
     margin-top: 10px;
-
 }
-
 .btnGh{
-	
+    
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
     background: gray;
@@ -106,26 +88,19 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
     padding: 10px 50px;
     margin-bottom:5px;
     margin-top: 10px;
-
 }
-
 #linkModal,
 .fa-google:hover,
  .fa-facebook-f:hover,
  .fa-github-alt{
       color:whitesmoke;
-
     } 
-
-
-
     #inputWall {
     padding:10px 10px;
     margin-top: 40px;
     text-align: center;
         
     }   
-
     #close, #logout {
         padding:10px 10px;
         margin-top: 20px;
@@ -134,9 +109,6 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
         margin-left: 40%;
         
         }   
-
-
-
     #logout {
         padding:10px 10px;
         margin-top: 20px;
@@ -145,63 +117,60 @@ body{ background-image: url("./assets/images/LinkUpBG.png");
         margin-left: 30%;
         
         }  
-
  #mssg, #email-ac, #pass-ac{
-
         color:whitesmoke;
-
     }
-
-
 #linkModal{
     font-family: 'Roboto Condensed';
     color: white;
     text-align: center;
     margin-bottom:40px;
+    margin-top: 15px;
    
     
-
-
 }
-
 #nameUser{
     font-family:'Open Sans', 'sans-serif';
     color:#3b5998;
     font-size: 14px;
-
 }
-
-
 .background{
     padding-bottom: 30%;
 }
-
 #nameUser, #mailUser,.comment{
     margin-left: 25px;
-
 }
-
 #buttons-wall {
-
 margin-right:17px;
    
-
 }
-
-
-
-
 @media (min-width: 320px) and (max-width: 480px) {
     body {
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         font-family: 'Open Sans', sans-serif;
-
     }
     #main-nav{
     background-color: #085793;
-    }
+    }.footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #085793;
+        color: white;
+        text-align: center;
+     }
+    
+     .id-logo{
+        width: 10%;
+        margin: 10px;
+     }
+    
+     .foot-title {
+        margin: 10px;
+     }
     /* .brand-logo{
         height: 2px;
         position: relative;
@@ -248,9 +217,26 @@ margin-right:17px;
         color: white;
        }
 
+
+       .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #085793;
+        color: white;
+        text-align: center;
+     }
+    
+     .id-logo{
+        width: 10%;
+        margin: 10px;
+     }
+    
+     .foot-title {
+        margin: 10px;
+     }
  
-
-
 .user-photo {
     max-width:20%;
     border-radius:50%;
@@ -258,8 +244,15 @@ margin-right:17px;
     margin-left: 13px;
     
     
-
 }
+
+
+  
+   
+
+
+
+
 
     
 

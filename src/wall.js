@@ -1,7 +1,7 @@
 ///////////////MURO
 
 // Initialize Cloud Firestore through Firebase
-let db = firebase.firestore();
+var db = firebase.firestore();
 
 //let buttonSave = document.getElementById('button-save');
 window.wall = {
@@ -14,6 +14,7 @@ window.wall = {
     let mssg = document.getElementById('mssg').value;
     let displayName = user.displayName;
     let photoURL = user.photoURL;
+    
     //Agregar datos
     db.collection("users").add({
         //first: name,
@@ -37,7 +38,7 @@ window.wall = {
 
     let table = document.getElementById('post');
     //let photoURL = user.photoURL;
-    
+   
     
 
     db.collection("users").onSnapshot((querySnapshot) => {
@@ -53,8 +54,39 @@ window.wall = {
       querySnapshot.forEach((doc) => {
         console.log(`${doc.id} => ${doc.data().last}`);
 
-        // <img id="photoUser"class="circle" src= "${user.photoURL}" alt="user">
+        
+        if(!user === null){
+          
+  
+          table.innerHTML +=  `
+            
+          <div class="card">
+         
+             <img id="photoUser"class="user-photo" src= "./assets/images/logito.png" alt="user" >
+ 
+             <p id="nameUser">User</p>
+              
+             <section id = "post">
+                 
+                 <p class="comment">${doc.data().last}</p> 
+ 
+             </section>
+       
+                 <section id ="buttons-wall">
+                 
+ 
+                     <button class = "button-icon"><i class="material-icons" id="creating" onclick="window.wall.editingData('${doc.id}','${doc.data().last}')" >create</i></button>
+                    
+                     <button onclick="deleting()"<button class = "button-icon"><i class="material-icons" id= "button_deleting" onclick="window.wall.deleteData('${doc.id}')">delete</i></button></button>
+                 
+                 
+                     <span class="likebtn-wrapper" data-identifier="likeButton1" datatheme="ugreen"></span>
+ 
+                 </section>  
+                 
+         </div>`
 
+        } else {
 
         table.innerHTML +=  `
             
@@ -78,17 +110,13 @@ window.wall = {
                    
                     <button onclick="deleting()"<button class = "button-icon"><i class="material-icons" id= "button_deleting" onclick="window.wall.deleteData('${doc.id}')">delete</i></button></button>
                 
-                  
-                      
-                    
+                
                     <span class="likebtn-wrapper" data-identifier="likeButton1" datatheme="ugreen"></span>
 
                 </section>  
                 
-        </div>
-         
-        `
-        
+        </div>`
+        }
       });
     });
   },
@@ -145,8 +173,6 @@ window.wall = {
   },
 
  
-
-
 
 };
 
