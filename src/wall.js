@@ -174,8 +174,6 @@ window.wall = {
 
  
 
-
-
 };
 
     //sidenav
